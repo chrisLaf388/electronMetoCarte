@@ -1,0 +1,13 @@
+A faire : 
+- axios not defined
+- email @ a enleveer
+
+- Requete pour se connecter 
+- Changement de page
+
+- meteo : corriger bug de la carte qui prends tout l'écran
+
+
+Terminé :
+- login.js
+- Ouvrir un page desktop pour se connecter
