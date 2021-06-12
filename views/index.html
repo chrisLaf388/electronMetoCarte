@@ -8,12 +8,20 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script defer src="../src/assets/js/index.js"></script>
+    <script defer src="../src/assets/js/weather.js"></script>
+    <script defer src="../src/assets/js/weather5daysGraph.js"></script>
+    <script defer src="../src/assets/js/maps.js"></script>
+    <script defer src="../src/assets/js/autoCompletion.js"></script>
 </head>
 <body>
+    <!-- graph -->
+    <div id="chartContainer" style='width: 100px; height: 100px;'></div>>
+        <canvas id="myChart" ></canvas>
+    </div>
     <!-- map -->
     <div id='map' style='width: 400px; height: 300px;'></div>
-    
     <div>
         <label>Entrer une ville : </label>
         <input type="text" list="villeDataList" id="villeSaisie">
