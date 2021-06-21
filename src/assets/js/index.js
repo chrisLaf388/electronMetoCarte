@@ -2,8 +2,9 @@ const villeSaisie = document.querySelector('#villeSaisie');
 const btnVille = document.querySelector('#btnVille');
 const villeDataList = document.querySelector('#villeDataList');
 const temperatureDiv = document.querySelector('#temperatureDiv')
-const btnTempGrph = document.querySelector('#btnTempGrph')
-const chartContainer = document.querySelector('')
+const btnTempGraph = document.querySelector('#btnTempGrph')
+const chartContainer = document.querySelector('#chartContainer')
+const map = document.querySelector('#map')
 
 //Evenement keypress qui affiche les nom de ville pour l'autocompletion
 villeSaisie.addEventListener('keyup', (event) => {
@@ -16,7 +17,13 @@ btnVille.addEventListener('click', ()=>{
 })
 
 //btnTempGrph toogle entre chartContainer et map
-btnTempGrph.addEventListener('click', ()=>{
-
+btnTempGraph.addEventListener('click', ()=>{
+    // chartContainer.classList.toggle('displayOn')
+    // map.classList.toggle('displayNone')
+        console.log(chartContainer)
+    chartContainer.style.display = (
+        chartContainer.style.display == "none" ? "block" : "none"); 
+    map.style.display = (
+        map.style.display == "none" ? "block" : "none"); 
 })
 
