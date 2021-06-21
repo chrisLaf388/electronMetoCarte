@@ -9,23 +9,26 @@
     <link rel="stylesheet" href="../src/assets/css/style.css">
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script defer src="../src/assets/js/index.js"></script>
     <script defer src="../src/assets/js/weather.js"></script>
     <script defer src="../src/assets/js/weather5daysGraph.js"></script>
+    <script defer src="../src/assets/js/index.js"></script>
     <script defer src="../src/assets/js/maps.js"></script>
     <script defer src="../src/assets/js/autoCompletion.js"></script>
 </head>
 <body>
     <nav>
         <div >
-            <label>Entrer une ville : </label>
+            <i class="fas fa-city"></i>
+            <label> Entrer une ville : </label>
             <div>
-                <input type="text" list="villeDataList" id="villeSaisie">
+                <input type="text" list="villeDataList" id="villeSaisie" value="Marseille">
                 <datalist id = "villeDataList"></datalist>
-                <button id="btnVille">ok</button>
             </div>
         </div>
+        
         <div id="temperatureDiv"></div>
         <button id="btnTempGrph">Température prévisionnelle / Map</button>
         <div>

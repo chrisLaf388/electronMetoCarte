@@ -1,13 +1,15 @@
-A faire : 
-- axios not defined
-- email @ a enleveer
-
-- Requete pour se connecter 
-- Changement de page
-
-- meteo : corriger bug de la carte qui prends tout l'écran
+Creer executable
+- npm install --save-dev @electron-forge/cli
+- npx electron-forge import
+- npm run make
 
 
-Terminé :
+ a Faire :
+- Quand click sur Marseille enleve le dataList
+- taille caractere a augmenter bootstap
+- afficher le graph dans une autre fenetre
+- ajouter des logos temperature 
+- QUand je clic sur Marseille envoi de requete et enleve le data liste
 - login.js
 - Ouvrir un page desktop pour se connecter
+- 

@@ -11,7 +11,8 @@ villeSaisie.addEventListener('keyup', (event) => {
     autoComplétion(event.currentTarget.value);
 });
 
-btnVille.addEventListener('click', ()=>{
+villeSaisie.addEventListener('change', ()=>{
+
     weatherEtMaps(villeSaisie.value)
     getGraph(villeSaisie.value)
 })
@@ -26,4 +27,7 @@ btnTempGraph.addEventListener('click', ()=>{
     map.style.display = (
         map.style.display == "none" ? "block" : "none"); 
 })
+
+weatherEtMaps('Marseille')
+
 
