@@ -17,28 +17,29 @@
     <script defer src="../src/assets/js/autoCompletion.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div >
-                <label>Entrer une ville : </label>
-                <div>
-                    <input type="text" list="villeDataList" id="villeSaisie">
-                    <datalist id = "villeDataList"></datalist>
-                    <button id="btnVille">ok</button>
-                </div>
+    <nav>
+        <div >
+            <label>Entrer une ville : </label>
+            <div>
+                <input type="text" list="villeDataList" id="villeSaisie">
+                <datalist id = "villeDataList"></datalist>
+                <button id="btnVille">ok</button>
             </div>
-            <div id="temperatureDiv"></div>
-            <button>Température prévisionnelle</button>
         </div>
+        <div id="temperatureDiv"></div>
+        <button id="btnTempGrph">Température prévisionnelle</button>
         <div>
-            <!-- graph -->
-            <div id="chartContainer" style = "display:none;"></div>
-                <canvas id="myChart" style = "display:none;"></canvas>
-            </div>
-            <!-- map -->
-            <div id='map'></div>
+    </nav>
+    <div>
+        <!-- graph -->
+        <div id="chartContainer" >
+            <canvas id="myChart" ></canvas>
         </div>
+        <!-- map -->
+        <div id='map'></div>
     </div>
     
 </body>
 </html>
+
+<!-- reduire taille graph + bouton switch carte / prevision -->

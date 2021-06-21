@@ -5,7 +5,6 @@ async function getGraph(ville) {
     const url5Jours = `http://api.openweathermap.org/data/2.5/forecast?q=${ville}&appid=1ce64129da731d692308f766613a1037`;
     const response2 = await fetch(url5Jours);
     const temp5Jours = await response2.json();
-    console.log(temp5Jours);
     temp5Jours.list.forEach((index) => {
         let heure = index.dt_txt.split(" ");
         if (heure[1] === "12:00:00") {
@@ -13,16 +12,18 @@ async function getGraph(ville) {
                 tableauDates.push(index.dt_txt);
             }
         });
+    console.log(tableauDates)
 
+    console.log(tableauTemperatures)
     //graph
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: tableauTemperatures,
+            labels: tableauDates,
             datasets: [{
                 label: '# of Votes',
-                data: tableauDates,
+                data: tableauTemperatures,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
